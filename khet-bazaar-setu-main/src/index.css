@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Agricultural Dark Theme - Khet Bazaar Setu */
+    --background: 25 15% 8%;
+    --foreground: 45 20% 92%;
+
+    --card: 25 18% 12%;
+    --card-foreground: 45 20% 92%;
+
+    --popover: 25 18% 12%;
+    --popover-foreground: 45 20% 92%;
+
+    /* Deep Forest Green - Primary Agricultural Color */
+    --primary: 120 45% 18%;
+    --primary-foreground: 120 15% 95%;
+    --primary-glow: 120 35% 25%;
+
+    /* Earth Tone Secondary */
+    --secondary: 35 25% 15%;
+    --secondary-foreground: 35 15% 90%;
+
+    /* Muted Earth */
+    --muted: 30 20% 14%;
+    --muted-foreground: 30 10% 65%;
+
+    /* Golden Harvest Accent */
+    --accent: 45 85% 45%;
+    --accent-foreground: 25 15% 8%;
+
+    /* Crop Success Green */
+    --success: 125 50% 35%;
+    --success-foreground: 125 15% 95%;
+
+    /* Warning Orange (like ripe crops) */
+    --warning: 35 90% 55%;
+    --warning-foreground: 25 15% 8%;
+
+    --destructive: 0 75% 45%;
+    --destructive-foreground: 0 15% 95%;
+
+    --border: 25 20% 18%;
+    --input: 25 20% 18%;
+    --ring: 120 45% 25%;
+
+    --radius: 0.75rem;
+
+    /* Rural Design Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(120 45% 18%), hsl(120 35% 25%));
+    --gradient-earth: linear-gradient(135deg, hsl(35 25% 15%), hsl(25 20% 18%));
+    --gradient-harvest: linear-gradient(135deg, hsl(45 85% 45%), hsl(50 75% 55%));
+    
+    /* Agricultural Shadows */
+    --shadow-crop: 0 8px 32px -8px hsl(120 45% 18% / 0.4);
+    --shadow-earth: 0 4px 16px -4px hsl(25 20% 8% / 0.6);
+    --shadow-glow: 0 0 24px hsl(45 85% 45% / 0.3);
+
+    /* Smooth Rural Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
